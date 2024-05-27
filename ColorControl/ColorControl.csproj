@@ -31,13 +31,10 @@
 		<SupportedOSPlatformVersion>10.0.20348.0</SupportedOSPlatformVersion>
 		<Copyright>2020-2024 Maassoft</Copyright>
 		<Authors>Maassoft</Authors>
-		<ManifestCertificateThumbprint>CF0BC153EA664CD97AC6F234B91F45D34630958F</ManifestCertificateThumbprint>
-		<ManifestKeyFile>ColorControl_1_TemporaryKey.pfx</ManifestKeyFile>
 		<GenerateManifests>true</GenerateManifests>
 		<TargetZone>LocalIntranet</TargetZone>
 		<ApplicationManifest>Properties\app.manifest</ApplicationManifest>
-		<SignManifests>true</SignManifests>
-		<AssemblyOriginatorKeyFile>ColorControl_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+		<SignManifests>false</SignManifests>
 		<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
