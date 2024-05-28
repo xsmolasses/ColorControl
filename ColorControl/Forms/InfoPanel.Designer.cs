@@ -28,27 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            wvInfo = new Microsoft.Web.WebView2.WinForms.WebView2();
             grpInfo = new System.Windows.Forms.GroupBox();
             lbPlugins = new System.Windows.Forms.ListBox();
             label7 = new System.Windows.Forms.Label();
             lblInfo = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)wvInfo).BeginInit();
             grpInfo.SuspendLayout();
             SuspendLayout();
-            // 
-            // wvInfo
-            // 
-            wvInfo.AllowExternalDrop = true;
-            wvInfo.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            wvInfo.CreationProperties = null;
-            wvInfo.DefaultBackgroundColor = System.Drawing.Color.White;
-            wvInfo.Location = new System.Drawing.Point(433, 3);
-            wvInfo.Name = "wvInfo";
-            wvInfo.Size = new System.Drawing.Size(671, 526);
-            wvInfo.Source = new System.Uri("https://github.com/Maassoft/ColorControl/releases", System.UriKind.Absolute);
-            wvInfo.TabIndex = 8;
-            wvInfo.ZoomFactor = 1D;
             // 
             // grpInfo
             // 
@@ -98,11 +83,9 @@
             // 
             // InfoPanel
             // 
-            Controls.Add(wvInfo);
             Controls.Add(grpInfo);
             Name = "InfoPanel";
-            Size = new System.Drawing.Size(1110, 534);
-            ((System.ComponentModel.ISupportInitialize)wvInfo).EndInit();
+            //Size = new System.Drawing.Size(1110, 534);
             grpInfo.ResumeLayout(false);
             grpInfo.PerformLayout();
             ResumeLayout(false);
@@ -110,7 +93,6 @@
 
         #endregion
 
-        private Microsoft.Web.WebView2.WinForms.WebView2 wvInfo;
         private System.Windows.Forms.GroupBox grpInfo;
         private System.Windows.Forms.ListBox lbPlugins;
         private System.Windows.Forms.Label label7;
